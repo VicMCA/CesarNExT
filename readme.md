@@ -1,5 +1,5 @@
 # CesarNExT
-Repositório das atividades práticas junto a CESAR School
+Repositório das atividades práticas junto a CESAR School. Pasta do build: main
 
 Definição do projeto no Collab:
 https://colab.research.google.com/drive/17fCl93mnYiqF8A69kR4C74lguy8aCT5r?usp=sharing
