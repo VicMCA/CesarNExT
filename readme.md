@@ -10,5 +10,8 @@ https://lucid.app/lucidchart/8c776d03-6bd8-4f36-958d-c5b499fc4a2a/edit?viewport_
 Tabela de atividades no  Trello
 https://trello.com/b/DBagR5Lf/projeto-pratico-next
 
-Diagrama de Atividades
-https://app.diagrams.net/#HVicMCA%2FCesarNExT%2Fmain%2Fdiagrama_de_atividades.drawio
+Diagrama de atividades do Cliente
+https://app.diagrams.net/#HVicMCA%2FCesarNExT%2Fmain%2Fdiagrama_de_atividades_cliente.drawio
+
+Diagrama de atividades da Assistência
+https://app.diagrams.net/#HVicMCA%2FCesarNExT%2Fmain%2Fdiagrama_de_atividades_assistencia3.drawio
