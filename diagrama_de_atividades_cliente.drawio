@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-20T15:09:56.936Z" agent="5.0 (X11)" etag="EagTus5SN-twksRaeSsp" version="15.5.6" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-10-20T15:12:22.009Z" agent="5.0 (X11)" etag="Ki1WnKvkuFc8M784svRA" version="15.5.6" type="github" pages="2">
   <diagram name="Cliente" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
-    <mxGraphModel dx="1988" dy="1383" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2356" dy="1633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
         <mxCell id="xOhRouxDfGiZBzLTzBQK-120" value="&lt;div&gt;&lt;span style=&quot;&quot;&gt;Tela de &lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;carregamento&lt;/span&gt;&lt;/div&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;labelBackgroundColor=none;labelBorderColor=none;sketch=0;align=center;fillColor=#cce5ff;strokeColor=#36393d;" parent="LE1P0ZQWoaHicoNtDAZf-23" vertex="1">
           <mxGeometry x="20" y="80" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="LE1P0ZQWoaHicoNtDAZf-2" value="Tela de Login" style="swimlane;startSize=20;rounded=0;sketch=0;" parent="LE1P0ZQWoaHicoNtDAZf-1" vertex="1">
+        <mxCell id="LE1P0ZQWoaHicoNtDAZf-2" value="Login" style="swimlane;startSize=20;rounded=0;sketch=0;" parent="LE1P0ZQWoaHicoNtDAZf-1" vertex="1">
           <mxGeometry x="210" width="1170" height="1150" as="geometry" />
         </mxCell>
         <mxCell id="xOhRouxDfGiZBzLTzBQK-249" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#5AA9E6;strokeColor=#000000;fillColor=#FFE45E;endArrow=block;endFill=0;endSize=10;startSize=10;strokeWidth=2;" parent="LE1P0ZQWoaHicoNtDAZf-2" source="LE1P0ZQWoaHicoNtDAZf-86" target="xOhRouxDfGiZBzLTzBQK-152" edge="1">
@@ -534,11 +534,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="LE1P0ZQWoaHicoNtDAZf-3" value="Lane 2" style="swimlane;startSize=20;rounded=0;sketch=0;" parent="LE1P0ZQWoaHicoNtDAZf-1" vertex="1">
+        <mxCell id="LE1P0ZQWoaHicoNtDAZf-3" value="Dashboard" style="swimlane;startSize=20;rounded=0;sketch=0;" parent="LE1P0ZQWoaHicoNtDAZf-1" vertex="1">
           <mxGeometry x="1380" width="230" height="1150" as="geometry" />
         </mxCell>
-        <mxCell id="LE1P0ZQWoaHicoNtDAZf-26" value="Tela principal do app" style="shape=delay;whiteSpace=wrap;html=1;rounded=0;sketch=0;align=left;" parent="LE1P0ZQWoaHicoNtDAZf-3" vertex="1">
-          <mxGeometry y="40" width="80" height="40" as="geometry" />
+        <mxCell id="Lux9b_ITZ5xcmjfqSg10-1" value="Tela principal" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;labelBackgroundColor=none;labelBorderColor=none;sketch=0;align=center;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="LE1P0ZQWoaHicoNtDAZf-3">
+          <mxGeometry x="10" y="80" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="LE1P0ZQWoaHicoNtDAZf-4" value="Lane 3" style="swimlane;startSize=20;rounded=0;sketch=0;" parent="LE1P0ZQWoaHicoNtDAZf-1" vertex="1">
           <mxGeometry x="1610" width="120" height="1150" as="geometry" />
