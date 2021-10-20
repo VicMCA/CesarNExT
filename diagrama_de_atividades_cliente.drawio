@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-20T16:41:29.919Z" agent="5.0 (X11)" etag="ixl7zJuWq50Tvwf9CilO" version="15.5.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-20T17:32:22.150Z" agent="5.0 (X11)" etag="m_Q6lwCN-RqxDybzrwlL" version="15.5.6" type="github">
   <diagram name="Cliente" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
     <mxGraphModel dx="2158" dy="1363" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -415,7 +415,7 @@
         <mxCell id="xOhRouxDfGiZBzLTzBQK-152" value="Dado Inválido" style="swimlane;rounded=0;labelBorderColor=none;sketch=0;align=center;fillColor=#ffcccc;strokeColor=#36393d;" parent="LE1P0ZQWoaHicoNtDAZf-2" vertex="1">
           <mxGeometry x="670" y="130" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="xOhRouxDfGiZBzLTzBQK-153" value="&lt;div&gt;O dado informado para o/a&lt;/div&gt;&lt;div&gt;{dado} não atende ao&lt;/div&gt;&lt;div&gt;formato válido&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="xOhRouxDfGiZBzLTzBQK-152" vertex="1">
+        <mxCell id="xOhRouxDfGiZBzLTzBQK-153" value="&lt;div&gt;O dado informado para o/a&lt;/div&gt;&lt;div&gt;${dado} não atende ao&lt;/div&gt;&lt;div&gt;formato válido&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="xOhRouxDfGiZBzLTzBQK-152" vertex="1">
           <mxGeometry x="20" y="30" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="xOhRouxDfGiZBzLTzBQK-253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#5AA9E6;endArrow=block;endFill=0;startSize=10;endSize=10;strokeColor=#000000;strokeWidth=2;fillColor=#FFE45E;" parent="LE1P0ZQWoaHicoNtDAZf-2" source="xOhRouxDfGiZBzLTzBQK-245" target="LE1P0ZQWoaHicoNtDAZf-87" edge="1">
@@ -430,8 +430,8 @@
         <mxCell id="xOhRouxDfGiZBzLTzBQK-245" value="Dado Ausente" style="swimlane;rounded=0;labelBorderColor=none;sketch=0;align=center;fillColor=#ffcccc;strokeColor=#36393d;" parent="LE1P0ZQWoaHicoNtDAZf-2" vertex="1">
           <mxGeometry x="670" y="280" width="200" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="xOhRouxDfGiZBzLTzBQK-246" value="Favor preencher o/a {dado}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="xOhRouxDfGiZBzLTzBQK-245" vertex="1">
-          <mxGeometry x="20" y="45" width="160" height="20" as="geometry" />
+        <mxCell id="xOhRouxDfGiZBzLTzBQK-246" value="Favor preencher o/a ${dado}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="xOhRouxDfGiZBzLTzBQK-245" vertex="1">
+          <mxGeometry x="15" y="45" width="170" height="20" as="geometry" />
         </mxCell>
         <mxCell id="xOhRouxDfGiZBzLTzBQK-286" value="v" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#5AA9E6;endArrow=block;endFill=0;startSize=10;endSize=10;strokeColor=#000000;strokeWidth=2;fillColor=#FFE45E;" parent="LE1P0ZQWoaHicoNtDAZf-2" source="xOhRouxDfGiZBzLTzBQK-247" target="xOhRouxDfGiZBzLTzBQK-281" edge="1">
           <mxGeometry relative="1" as="geometry">
