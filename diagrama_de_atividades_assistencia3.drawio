@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-20T16:00:14.802Z" agent="5.0 (X11)" etag="oxwGPU6rNZPWzstpp7iV" version="15.5.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-20T16:01:16.933Z" agent="5.0 (X11)" etag="7fk6wWo9mE2-bYggomoe" version="15.5.6" type="github">
   <diagram name="Cliente" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
-    <mxGraphModel dx="2356" dy="1504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2356" dy="1470" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -382,8 +382,8 @@
             <mxRectangle width="130" height="22" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="xOhRouxDfGiZBzLTzBQK-122" value="Caso o cliente ainda não seja cadastrado" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=1;labelBorderColor=none;sketch=0;align=center;size=8;fillColor=#ffff88;strokeColor=#36393d;" parent="LE1P0ZQWoaHicoNtDAZf-2" vertex="1">
-          <mxGeometry x="-70" y="130" width="130" height="40" as="geometry" />
+        <mxCell id="xOhRouxDfGiZBzLTzBQK-122" value="Caso a assistência ainda não seja cadastrada" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;rounded=1;labelBorderColor=none;sketch=0;align=center;size=8;fillColor=#ffff88;strokeColor=#36393d;" parent="LE1P0ZQWoaHicoNtDAZf-2" vertex="1">
+          <mxGeometry x="-70" y="130" width="130" height="50" as="geometry" />
         </mxCell>
         <mxCell id="xOhRouxDfGiZBzLTzBQK-137" value="Manual" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;sketch=0;size=20;fillColor=#eeeeee;strokeColor=#36393d;" parent="LE1P0ZQWoaHicoNtDAZf-2" vertex="1">
           <mxGeometry x="150" y="130" width="120" height="40" as="geometry" />
