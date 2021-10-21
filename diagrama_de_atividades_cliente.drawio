@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-21T17:32:09.595Z" agent="5.0 (X11)" etag="nd5M0o0Lm5cRGPc0l0Bj" version="15.5.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-21T17:36:07.011Z" agent="5.0 (X11)" etag="9gYJZbuQjCUjn_O00tzq" version="15.5.8" type="github">
   <diagram name="Cliente" id="0783ab3e-0a74-02c8-0abd-f7b4e66b4bec">
-    <mxGraphModel dx="2356" dy="1599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2356" dy="1470" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -433,12 +433,8 @@
         <mxCell id="xOhRouxDfGiZBzLTzBQK-246" value="Favor preencher o/a ${dado}" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" parent="xOhRouxDfGiZBzLTzBQK-245" vertex="1">
           <mxGeometry x="15" y="45" width="170" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="xOhRouxDfGiZBzLTzBQK-286" value="v" style="edgeStyle=orthogonalEdgeStyle;rounded=0;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fontColor=#5AA9E6;endArrow=block;endFill=0;startSize=10;endSize=10;strokeColor=#000000;strokeWidth=2;fillColor=#FFE45E;" parent="LE1P0ZQWoaHicoNtDAZf-2" source="xOhRouxDfGiZBzLTzBQK-247" target="xOhRouxDfGiZBzLTzBQK-281" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1060" y="485" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="CxjfrviSyD7CeEPWeeBY-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;startSize=10;endSize=10;strokeWidth=2;" edge="1" parent="LE1P0ZQWoaHicoNtDAZf-2" source="xOhRouxDfGiZBzLTzBQK-247" target="xOhRouxDfGiZBzLTzBQK-281">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="xOhRouxDfGiZBzLTzBQK-247" value="Preenchimento Finalizado" style="swimlane;rounded=0;labelBorderColor=none;sketch=0;align=center;fillColor=#cdeb8b;strokeColor=#36393d;" parent="LE1P0ZQWoaHicoNtDAZf-2" vertex="1">
           <mxGeometry x="670" y="440" width="200" height="90" as="geometry" />
