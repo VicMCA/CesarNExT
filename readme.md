@@ -1,5 +1,5 @@
 # CesarNExT
-Repositório das atividades práticas junto a CESAR School
+Repositório das atividades práticas junto a CESAR School. Pasta do build: main
 
 Definição do projeto no Collab:
 https://colab.research.google.com/drive/17fCl93mnYiqF8A69kR4C74lguy8aCT5r?usp=sharing
@@ -9,3 +9,9 @@ https://lucid.app/lucidchart/8c776d03-6bd8-4f36-958d-c5b499fc4a2a/edit?viewport_
 
 Tabela de atividades no  Trello
 https://trello.com/b/DBagR5Lf/projeto-pratico-next
+
+Diagrama de atividades do Cliente
+https://app.diagrams.net/#HVicMCA%2FCesarNExT%2Fmain%2Fdiagrama_de_atividades_cliente.drawio
+
+Diagrama de atividades da Assistência
+https://app.diagrams.net/#HVicMCA%2FCesarNExT%2Fmain%2Fdiagrama_de_atividades_assistencia3.drawio
