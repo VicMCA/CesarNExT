@@ -12,7 +12,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Entity
 @Table(name = "ENDERECO")
-
 public class Endereco implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
