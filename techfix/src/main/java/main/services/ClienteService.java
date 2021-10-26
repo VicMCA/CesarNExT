@@ -25,7 +25,7 @@ public class ClienteService {
         return clienteDAO.findAll();
     }
 
-    public Cliente find(long id){
-        return clienteDAO.findById(id).get();
+    public Cliente find(Cliente cliente){
+        return clienteDAO.findById(cliente.getId()).get();
     }
 }
