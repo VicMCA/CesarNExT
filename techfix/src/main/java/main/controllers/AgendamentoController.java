@@ -16,26 +16,36 @@ public class AgendamentoController {
     @Autowired
     AgendamentoService agendamentoService;
 
-    @PostMapping("/")
+    @PostMapping("/salvar")
     public ResponseEntity<Void>salva(@RequestBody Agendamento agendamento) throws URISyntaxException{
         agendamentoService.salvar(agendamento);
         return ResponseEntity.created(new URI("/"+agendamento.getId())).build();
     }
-    @PostMapping("/")
-    public ResponseEntity<Void>atualiza(@RequestBody Agendamento agendamentoOld, Agendamento agendamentoNew) throws URISyntaxException{
-        agendamentoService.atualizar(agendamentoOld,agendamentoNew);
-        return ResponseEntity.created(new URI("/"+agendamentoNew.getId())).build();
+    @PostMapping("/atualizar")
+    public ResponseEntity<Void>atualiza(@RequestBody Agendamento agendamento) throws URISyntaxException{
+        agendamentoService.salvar(agendamento);
+        return ResponseEntity.created(new URI("http://localhost:8081/agendamento/"+agendamento.getId())).build();
     }
-    //confirmar, tenho dúvidas de como passar o ID do Agendamento que desejo retirar
-    @PostMapping("/")
-    public ResponseEntity<Void>remove(@RequestBody Agendamento agendamento) throws URISyntaxException{
-        agendamentoService.remover(agendamento);
-        return (ResponseEntity<Void>) ResponseEntity.ok();
+
+    @GetMapping("/buscar/{agendamento}")
+    public ResponseEntity<Agendamento> buscar(@PathVariable("agendamento")Agendamento agendamento) {
+        if (agendamento != null){
+            return ResponseEntity.ok().body(agendamentoService.find(agendamento));
+        }
+        return ResponseEntity.notFound().build();
     }
-    @GetMapping("/all")
-    public ResponseEntity<List<Agendamento>> buscar() {
-        List<Agendamento> agendamentos = agendamentoService.buscar();
-        return ResponseEntity.ok().body(agendamentos);
+
+    @GetMapping("/buscarTodos")
+    public ResponseEntity<List<Agendamento>> buscarTodos(){
+        return ResponseEntity.ok().body(agendamentoService.findAll());
     }
-    //falta método para uma busca específica
+
+    @PostMapping("/delete/{agendamento}")
+    public ResponseEntity<Void>remove(@PathVariable("agendamento") Agendamento agendamento){
+        if (agendamento != null) {
+            agendamentoService.remover(agendamento);
+            return ResponseEntity.noContent().build();
+        }
+        return ResponseEntity.notFound().build();
+    }
 }

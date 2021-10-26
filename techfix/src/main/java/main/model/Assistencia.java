@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -16,36 +17,34 @@ public class Assistencia implements Serializable {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "assistencia_id", nullable = false)
+    @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "assistencia_nome", nullable = false, unique = false)
+    @Column(name = "nome", nullable = false, unique = false)
     private String nome;
 
-    @Column(name = "assistencia_telefone", nullable = false)
+    @Column(name = "telefone", nullable = false)
     private String telefone;
 
-    @Column(name = "assistencia_email", nullable = false)
+    @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "assistencia_senha", nullable = false)
+    @Column(name = "senha", nullable = false)
     private String senha;
-    
-    @Column(name = "assistencia_categoria", nullable = false)
-    private CategoriaEquip categoriaEquip;
 
-    @Column(name = "assistencia_endereco", nullable = false)
-    private Endereco endereco;
-
-    @Column(name = "assistencia_horario_funcionamento", nullable = false)
+    @Column(name = "horario_de_fudamento", nullable = false)
     private String horarioFuncionamento;
 
-    @Column(name = "assistencia_horario", nullable = false)
-    private Horario horario;
+    @OneToOne
+    @JoinColumn(name = "endereco_id", nullable = false)
+    private Endereco endereco;
 
-    /*
-    @OneToMany(mappedBy = "CategoriaEquip")
-    @JoinColumn(name = "CATEGORIA_ID", nullable = false)
-    private CategoriaEquip categoriaEquip;
-    */
+    @OneToMany
+    @JoinColumn(name = "horario_id", nullable = false)
+    private List<Horario> horario;
+
+    @OneToMany
+    @JoinColumn(name = "categoria_id", nullable = false)
+    private List<CategoriaEquip> categoriaEquip;
+
 }

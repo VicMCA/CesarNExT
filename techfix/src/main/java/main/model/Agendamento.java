@@ -18,28 +18,25 @@ public class Agendamento implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "agendamento_id", nullable = false)
+    @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "agendamento_data", nullable = false)
-    private Date data;
-
-    @Column(name = "agendamento_hora", nullable = false)
-    private Date hora;
-
-    @Column(name = "agendamento_categoria_equipamento", nullable = false)
-    private List<CategoriaEquip> categoriaEquip;
-
-    @Column(name = "agendamento_defeito", nullable = false)
+    @Column(name = "defeito", nullable = false)
     private String defeito;
+
+    @OneToMany
+    @JoinColumn(name = "categorias_equipamento", nullable = false)
+    private List<CategoriaEquip> categoriaEquip;
   
     @OneToOne
-    @JoinColumn(name = "assistencia_id")
-    @Column (name = "agendamento_assistencias")
+    @JoinColumn(name = "assitencia_id")
     private Assistencia assistencia;
 
     @OneToOne
     @JoinColumn(name = "cliente_id")
-    @Column (name = "agendamento_clientes")
     private Cliente cliente;
+
+    @OneToOne
+    @JoinColumn(name = "data_id", nullable = false)
+    private Horario data;
 }

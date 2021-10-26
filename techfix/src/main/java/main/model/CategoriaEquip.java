@@ -15,9 +15,10 @@ import java.io.Serializable;
 public class CategoriaEquip implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "categoria_id", nullable = false)
+    @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "categoria_nome", nullable = false)
+    @Column(name = "nome", nullable = false)
     private String nome;
+
 }
