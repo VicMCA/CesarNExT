@@ -13,34 +13,33 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "cliente")
+@Table(name = "agendamentos")
 public class Agendamento implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID", nullable = false)
+    @Column(name = "agendamento_id", nullable = false)
     private Long id;
 
-    @Column(name = "DATA", nullable = false)
+    @Column(name = "agendamento_data", nullable = false)
     private Date data;
 
-    @Column(name = "HORA", nullable = false)
+    @Column(name = "agendamento_hora", nullable = false)
     private Date hora;
 
-    @Column(name = "CATEGORIA_EQUIPAMENTO", nullable = false)
+    @Column(name = "agendamento_categoria_equipamento", nullable = false)
     private List<CategoriaEquip> categoriaEquip;
 
-    @Column(name = "DEFEITO", nullable = false)
+    @Column(name = "agendamento_defeito", nullable = false)
     private String defeito;
-    /*
-    @OneToOne(mappedBy = "Assistencia")
-    @JoinColumn(name = "ASSISTENCIA", nullable = false)
-    private Cliente cliente;
-    */
+  
+    @OneToOne
+    @JoinColumn(name = "assistencia_id")
+    @Column (name = "agendamento_assistencias")
+    private Assistencia assistencia;
 
-    /*@OneToOne(mappedBy = "Cliente")
-    @JoinColumn(name = "CLIENTE_ID", nullable = false)
+    @OneToOne
+    @JoinColumn(name = "cliente_id")
+    @Column (name = "agendamento_clientes")
     private Cliente cliente;
-    */
-
 }

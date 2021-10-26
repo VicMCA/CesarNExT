@@ -1,0 +1,49 @@
+create table clientes (
+id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+nome TEXT NOT NULL,
+cpf VARCHAR(14) NOT NULL UNIQUE,
+telefone VARCHAR(11) NOT NULL,
+email TEXT NOT NULL,
+senha TEXT NOT NULL,
+endereco TEXT NOT NULL
+);
+
+insert into clientes(
+nome, cpf, telefone, email, senha, endereco
+) 
+values(
+'Severino Severo',
+'000.111.222-33',
+'81999887766',
+'severinosevero@email.com.br',
+'sougentil',
+'Rua do Bom Humor 90 Humores Recife-PE'
+), (
+'Janaína Jamelão',
+'123.456.789-00',
+'81998765432',
+'janainajota@email.com',
+'J0t4.H4ck3R',
+'Avenida Ave Maria 771 Santinhos Recife-PE'
+), (
+'Karina Kubitschek',
+'098.765.432-10',
+'81991827364',
+'karininha925@email.com',
+'doguinhoKiko',
+'Rua Rodovia Roda Rápida 365 Redemoinho Recife-PE'
+), (
+'Hugo Hamilton',
+'112.233.445-56',
+'81992143657',
+'hamiltoniano44@email.com',
+'Amo.Lasanha',
+'Avenida Alvarenga 852 Alto dos Alpes Recife-PE'
+), (
+'Bianca Biancchi',
+'567.432.198-06',
+'81981230987',
+'biancchissima@email.com',
+'m3biancchi',
+'Rua Banca Bancos 484 Berlinda dos Belos Recife-PE'
+);
