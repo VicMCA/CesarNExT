@@ -15,7 +15,7 @@ import java.io.Serializable;
 public class Assistencia implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID", nullable = false)
+    @Column(name = "ASSISTENCIA_ID", nullable = false)
     private Long id;
 
     @Column(name = "NOME", nullable = false, unique = false)
