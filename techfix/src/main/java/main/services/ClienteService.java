@@ -19,7 +19,7 @@ public class ClienteService {
         clienteDAO.save(cliente);
     }
 
-    public void remover(Cliente cliente){
+    public void deletar(Cliente cliente){
         clienteDAO.delete(cliente);
     }
 
@@ -27,7 +27,7 @@ public class ClienteService {
         return clienteDAO.findAll();
     }
 
-    public Cliente find(long id){
-        return clienteDAO.findById(id).get();
+    public Cliente find(Cliente cliente){
+        return clienteDAO.findById(cliente.getId()).get();
     }
 }
