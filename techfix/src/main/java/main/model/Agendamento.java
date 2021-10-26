@@ -32,7 +32,6 @@ public class Agendamento implements Serializable {
 
     @Column(name = "DEFEITO", nullable = false)
     private String defeito;
-
     /*
     @OneToOne(mappedBy = "Assistencia")
     @JoinColumn(name = "ASSISTENCIA", nullable = false)
