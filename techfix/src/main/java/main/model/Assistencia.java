@@ -11,36 +11,36 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="ASSISTENCIAS")
+@Table(name="assistencias")
 public class Assistencia implements Serializable {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ASSISTENCIA_ID", nullable = false)
+    @Column(name = "assistencia_id", nullable = false)
     private Long id;
 
-    @Column(name = "ASSISTENCIA_NOME", nullable = false, unique = false)
+    @Column(name = "assistencia_nome", nullable = false, unique = false)
     private String nome;
 
-    @Column(name = "ASSISTENCIA_TELEFONE", nullable = false)
+    @Column(name = "assistencia_telefone", nullable = false)
     private String telefone;
 
-    @Column(name = "ASSISTENCIA_EMAIL", nullable = false)
+    @Column(name = "assistencia_email", nullable = false)
     private String email;
 
-    @Column(name = "ASSISTENCIA_SENHA", nullable = false)
+    @Column(name = "assistencia_senha", nullable = false)
     private String senha;
     
-    @Column(name = "ASSISTENCIA_CATEGORIA", nullable = false)
+    @Column(name = "assistencia_categoria", nullable = false)
     private CategoriaEquip categoriaEquip;
 
-    @Column(name = "ASSISTENCIA_ENDERECO", nullable = false)
+    @Column(name = "assistencia_endereco", nullable = false)
     private Endereco endereco;
 
-    @Column(name = "ASSISTENCIA_HORARIO_FUNCIONAMENTO", nullable = false)
+    @Column(name = "assistencia_horario_funcionamento", nullable = false)
     private String horarioFuncionamento;
 
-    @Column(name = "ASSISTENCIA_HORARIO", nullable = false)
+    @Column(name = "assistencia_horario", nullable = false)
     private Horario horario;
 
     /*

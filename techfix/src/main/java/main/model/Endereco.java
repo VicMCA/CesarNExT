@@ -11,34 +11,34 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "ENDERECOS")
+@Table(name = "enderecos")
 public class Endereco implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ENDERECO_ID", nullable = false)
+    @Column(name = "endereco_id", nullable = false)
     private Long id;
 
-    @Column(name = "ENDERECO_RUA", nullable = false)
+    @Column(name = "endereco_rua", nullable = false)
     private String rua;
 
-    @Column(name = "ENDERECO_NUMERO", nullable = false)
+    @Column(name = "endereco_numero", nullable = false)
     private int numero;
 
-    @Column(name = "ENDERECO_COMPLEMENTO", nullable = false)
+    @Column(name = "endereco_complemento", nullable = false)
     private String complemento;
 
-    @Column(name = "ENDERECO_BAIRRO", nullable = false)
+    @Column(name = "endereco_bairro", nullable = false)
     private String bairro;
 
-    @Column(name = "ENDERECO_CIDADE", nullable = false)
+    @Column(name = "endereco_cidade", nullable = false)
     private String cidade;
 
-    @Column(name = "ENDERECO_ESTADO", nullable = false)
+    @Column(name = "endereco_estado", nullable = false)
     private String estado;
 
-    @Column(name = "ENDERECO_CEP", nullable = false)
+    @Column(name = "endereco_cep", nullable = false)
     private String cep;
 
-    @Column(name = "ENDERECO_PAIS", nullable = false)
+    @Column(name = "endereco_pais", nullable = false)
     private String pais;
 }
