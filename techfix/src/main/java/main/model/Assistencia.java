@@ -16,31 +16,31 @@ public class Assistencia implements Serializable {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "assistencia_id", nullable = false)
+    @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "assistencia_nome", nullable = false, unique = false)
+    @Column(name = "nome", nullable = false, unique = false)
     private String nome;
 
-    @Column(name = "assistencia_telefone", nullable = false)
+    @Column(name = "telefone", nullable = false)
     private String telefone;
 
-    @Column(name = "assistencia_email", nullable = false)
+    @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "assistencia_senha", nullable = false)
+    @Column(name = "senha", nullable = false)
     private String senha;
     
-    @Column(name = "assistencia_categoria", nullable = false)
+    @Column(name = "categoria", nullable = false)
     private CategoriaEquip categoriaEquip;
 
-    @Column(name = "assistencia_endereco", nullable = false)
+    @Column(name = "endereco", nullable = false)
     private Endereco endereco;
 
-    @Column(name = "assistencia_horario_funcionamento", nullable = false)
+    @Column(name = "horario_funcionamento", nullable = false)
     private String horarioFuncionamento;
 
-    @Column(name = "assistencia_horario", nullable = false)
+    @Column(name = "horario", nullable = false)
     private Horario horario;
 
     /*

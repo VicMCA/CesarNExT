@@ -23,28 +23,28 @@ assistencia_horariofuncionamento
 values(
 'Tech Tecnicos',
 'Smartphones, Smartwatches',
-'81999887766',
+'8131234567',
 'severinosevero@email.com.br',
 'sougentil',
 'Rua do Bom Humor 90 Humores Recife-PE'
 ), (
 'Janaína Jamelão',
 '123.456.789-00',
-'81998765432',
+'813',
 'janainajota@email.com',
 'J0t4.H4ck3R',
 'Avenida Ave Maria 771 Santinhos Recife-PE'
 ), (
 'Karina Kubitschek',
 '098.765.432-10',
-'81991827364',
+'813',
 'karininha925@email.com',
 'doguinhoKiko',
 'Rua Rodovia Roda Rápida 365 Redemoinho Recife-PE'
 ), (
 'Hugo Hamilton',
 '112.233.445-56',
-'81992143657',
+'813',
 'hamiltoniano44@email.com',
 'Amo.Lasanha',
 'Avenida Alvarenga 852 Alto dos Alpes Recife-PE'

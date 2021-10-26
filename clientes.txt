@@ -1,0 +1,57 @@
+-- MariaDB dump 10.19  Distrib 10.4.21-MariaDB, for Linux (x86_64)
+--
+-- Host: localhost    Database: techfix
+-- ------------------------------------------------------
+-- Server version	10.4.21-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `clientes`
+--
+
+DROP TABLE IF EXISTS `clientes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `clientes` (
+  `cliente_id` int(11) NOT NULL AUTO_INCREMENT,
+  `cliente_nome` text NOT NULL,
+  `cliente_cpf` varchar(14) NOT NULL,
+  `cliente_telefone` varchar(11) NOT NULL,
+  `cliente_email` text NOT NULL,
+  `cliente_senha` text NOT NULL,
+  `cliente_endereco` text NOT NULL,
+  PRIMARY KEY (`cliente_id`),
+  UNIQUE KEY `cliente_cpf` (`cliente_cpf`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `clientes`
+--
+
+LOCK TABLES `clientes` WRITE;
+/*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
+INSERT INTO `clientes` VALUES (1,'Severino Severo','000.111.222-33','81999887766','severinosevero@email.com.br','sougentil','Rua do Bom Humor 90 Humores Recife-PE'),(2,'Janaína Jamelão','123.456.789-00','81998765432','janainajota@email.com','J0t4.H4ck3R','Avenida Ave Maria 771 Santinhos Recife-PE'),(3,'Karina Kubitschek','098.765.432-10','81991827364','karininha925@email.com','doguinhoKiko','Rua Rodovia Roda Rápida 365 Redemoinho Recife-PE'),(4,'Hugo Hamilton','112.233.445-56','81992143657','hamiltoniano44@email.com','Amo.Lasanha','Avenida Alvarenga 852 Alto dos Alpes Recife-PE'),(5,'Bianca Biancchi','567.432.198-06','81981230987','biancchissima@email.com','m3biancchi','Rua Banca Bancos 484 Berlinda dos Belos Recife-PE');
+/*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-10-26 15:09:54

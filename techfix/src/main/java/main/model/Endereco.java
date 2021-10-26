@@ -15,30 +15,30 @@ import java.io.Serializable;
 public class Endereco implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "endereco_id", nullable = false)
+    @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "endereco_rua", nullable = false)
+    @Column(name = "rua", nullable = false)
     private String rua;
 
-    @Column(name = "endereco_numero", nullable = false)
+    @Column(name = "numero", nullable = false)
     private int numero;
 
-    @Column(name = "endereco_complemento", nullable = false)
+    @Column(name = "complemento", nullable = false)
     private String complemento;
 
-    @Column(name = "endereco_bairro", nullable = false)
+    @Column(name = "bairro", nullable = false)
     private String bairro;
 
-    @Column(name = "endereco_cidade", nullable = false)
+    @Column(name = "cidade", nullable = false)
     private String cidade;
 
-    @Column(name = "endereco_estado", nullable = false)
+    @Column(name = "estado", nullable = false)
     private String estado;
 
-    @Column(name = "endereco_cep", nullable = false)
+    @Column(name = "cep", nullable = false)
     private String cep;
 
-    @Column(name = "endereco_pais", nullable = false)
+    @Column(name = "pais", nullable = false)
     private String pais;
 }
