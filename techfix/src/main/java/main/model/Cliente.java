@@ -34,7 +34,7 @@ public class Cliente implements Serializable {
 
     @Column(name = "senha", nullable = false)
     private String senha;
-
+  
     @OneToOne
     @JoinColumn(name = "endereco_id", nullable = false)
     private Endereco endereco;
@@ -46,5 +46,4 @@ public class Cliente implements Serializable {
     /*@OneToMany
     @JoinColumn(name = "AGENDAMENTO_ID", unique = true)
     private List<Agendamento> agendamentos;*/
-
 }

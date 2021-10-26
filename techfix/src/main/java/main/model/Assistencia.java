@@ -32,7 +32,7 @@ public class Assistencia implements Serializable {
     @Column(name = "senha", nullable = false)
     private String senha;
 
-    @Column(name = "horario_de_fudamento", nullable = false)
+    @Column(name = "horario_de_funcionamento", nullable = false)
     private String horarioFuncionamento;
 
     @OneToOne
@@ -46,5 +46,4 @@ public class Assistencia implements Serializable {
     @OneToMany
     @JoinColumn(name = "categoria_id", nullable = false)
     private List<CategoriaEquip> categoriaEquip;
-
 }
