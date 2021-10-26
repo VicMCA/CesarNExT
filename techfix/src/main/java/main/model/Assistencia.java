@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -30,22 +31,19 @@ public class Assistencia implements Serializable {
 
     @Column(name = "senha", nullable = false)
     private String senha;
-    
-    @Column(name = "categoria", nullable = false)
-    private CategoriaEquip categoriaEquip;
 
-    @Column(name = "endereco", nullable = false)
-    private Endereco endereco;
-
-    @Column(name = "horario_funcionamento", nullable = false)
+    @Column(name = "horario_de_funcionamento", nullable = false)
     private String horarioFuncionamento;
 
-    @Column(name = "horario", nullable = false)
-    private Horario horario;
+    @OneToOne
+    @JoinColumn(name = "endereco_id", nullable = false)
+    private Endereco endereco;
 
-    /*
-    @OneToMany(mappedBy = "CategoriaEquip")
-    @JoinColumn(name = "CATEGORIA_ID", nullable = false)
-    private CategoriaEquip categoriaEquip;
-    */
+    @OneToMany
+    @JoinColumn(name = "horario_id", nullable = false)
+    private List<Horario> horario;
+
+    @OneToMany
+    @JoinColumn(name = "categoria_id", nullable = false)
+    private List<CategoriaEquip> categoriaEquip;
 }

@@ -15,16 +15,17 @@ public class AgendamentoService {
     public void salvar(Agendamento agendamento){
         agendamentoDAO.save(agendamento);
     }
+
     public void remover(Agendamento agendamento){
         agendamentoDAO.delete(agendamento);
     }
-    public void atualizar(Agendamento agendamentoOld,Agendamento agendamentoNew) {
-        agendamentoDAO.delete(agendamentoOld);
-        agendamentoDAO.save(agendamentoNew);
-    }
-    public List<Agendamento>buscar(){
+
+    public List<Agendamento> findAll(){
         return agendamentoDAO.findAll();
     }
 
+    public Agendamento find(Agendamento agendamento){
+        return agendamentoDAO.findById(agendamento.getId()).get();
+    }
 
 }

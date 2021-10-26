@@ -20,4 +20,5 @@ public class CategoriaEquip implements Serializable{
 
     @Column(name = "nome", nullable = false)
     private String nome;
+
 }

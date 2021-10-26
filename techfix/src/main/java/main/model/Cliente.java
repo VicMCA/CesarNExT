@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -33,12 +34,16 @@ public class Cliente implements Serializable {
 
     @Column(name = "senha", nullable = false)
     private String senha;
-
-    @OneToMany(mappedBy = "Endereco")
-    @JoinColumn(name = "ENDERECO_ID", nullable = false)
+  
+    @OneToOne
+    @JoinColumn(name = "endereco_id", nullable = false)
     private Endereco endereco;
 
-    @OneToMany(mappedBy = "Equipamento")
-    @JoinColumn(name = "EQUIPAMENTO_ID", nullable = false)
-    private Equipamento equipamento;
+    @OneToMany
+    @JoinColumn(name = "equipamento_id")
+    private List<Equipamento> equipamentos;
+
+    /*@OneToMany
+    @JoinColumn(name = "AGENDAMENTO_ID", unique = true)
+    private List<Agendamento> agendamentos;*/
 }

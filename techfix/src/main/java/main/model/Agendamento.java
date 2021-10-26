@@ -21,25 +21,22 @@ public class Agendamento implements Serializable {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "data", nullable = false)
-    private Date data;
-
-    @Column(name = "hora", nullable = false)
-    private Date hora;
-
-    @Column(name = "categoria_equipamento", nullable = false)
-    private List<CategoriaEquip> categoriaEquip;
-
     @Column(name = "defeito", nullable = false)
     private String defeito;
+
+    @OneToMany
+    @JoinColumn(name = "categorias_equipamento", nullable = false)
+    private List<CategoriaEquip> categoriaEquip;
   
     @OneToOne
-    @JoinColumn(name = "id")
-    @Column (name = "assistencias")
+    @JoinColumn(name = "assitencia_id")
     private Assistencia assistencia;
 
     @OneToOne
-    @JoinColumn(name = "id")
-    @Column (name = "clientes")
+    @JoinColumn(name = "cliente_id")
     private Cliente cliente;
+
+    @OneToOne
+    @JoinColumn(name = "data_id", nullable = false)
+    private Horario data;
 }
