@@ -32,14 +32,14 @@ public class Agendamento implements Serializable {
 
     @Column(name = "agendamento_defeito", nullable = false)
     private String defeito;
-
+  
     @OneToOne
-    @JoinColumn(name="assistencia_id")
-    @Column (name="agendamento_assistencias")
+    @JoinColumn(name = "assistencia_id")
+    @Column (name = "agendamento_assistencias")
     private Assistencia assistencia;
 
     @OneToOne
-    @JoinColumn(name="cliente_id")
-    @Column (name="agendamento_clientes")
+    @JoinColumn(name = "cliente_id")
+    @Column (name = "agendamento_clientes")
     private Cliente cliente;
 }
