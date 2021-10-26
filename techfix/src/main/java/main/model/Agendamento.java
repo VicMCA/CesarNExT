@@ -13,12 +13,12 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "cliente")
+@Table(name = "AGENDAMENTO")
 public class Agendamento implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID", nullable = false)
+    @Column(name = "AGENDAMENTO_ID", nullable = false)
     private Long id;
 
     @Column(name = "DATA", nullable = false)
@@ -33,15 +33,13 @@ public class Agendamento implements Serializable {
     @Column(name = "DEFEITO", nullable = false)
     private String defeito;
 
-    /*
-    @OneToOne(mappedBy = "Assistencia")
-    @JoinColumn(name = "ASSISTENCIA", nullable = false)
-    private Cliente cliente;
-    */
+    @OneToOne
+    @JoinColumn(name="ASSISTENCIA_ID")
+    @Column (name="ASSISTENCIAS")
+    private Assistencia assistencia;
 
-    /*@OneToOne(mappedBy = "Cliente")
-    @JoinColumn(name = "CLIENTE_ID", nullable = false)
+    @OneToOne
+    @JoinColumn(name="CLIENTE_ID")
+    @Column (name="CLIENTES")
     private Cliente cliente;
-    */
-
 }
