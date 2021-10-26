@@ -11,13 +11,13 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "CATEGORIAEQUIP")
+@Table(name = "CATEGORIAS")
 public class CategoriaEquip implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID", nullable = false)
     private Long id;
 
-    @Column(name = "NOME", nullable = false)
+    @Column(name = "CATEGORIA_NOME", nullable = false)
     private String nome;
 }

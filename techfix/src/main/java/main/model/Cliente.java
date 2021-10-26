@@ -11,30 +11,30 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "cliente")
+@Table(name = "CLIENTES")
 public class Cliente implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID", nullable = false)
+    @Column(name = "CLIENTE_ID", nullable = false)
     private Long id;
 
-    @Column(name = "NOME", nullable = false)
+    @Column(name = "CLIENTE_NOME", nullable = false)
     private String nome;
 
-    @Column(name = "CPF", nullable = false, unique = true)
+    @Column(name = "CLIENTE_CPF", nullable = false, unique = true)
     private String cpf;
 
-    @Column(name = "TELEFONE", nullable = false)
+    @Column(name = "CLIENTE_TELEFONE", nullable = false)
     private String telefone;
 
-    @Column(name = "ENDERECO", nullable = false)
+    @Column(name = "CLIENTE_ENDERECO", nullable = false)
     private Endereco endereco;
 
-    @Column(name = "EMAIL", nullable = false)
+    @Column(name = "CLIENTE_EMAIL", nullable = false)
     private String email;
 
-    @Column(name = "SENHA", nullable = false)
+    @Column(name = "CLIENTE_SENHA", nullable = false)
     private String senha;
 
     /*

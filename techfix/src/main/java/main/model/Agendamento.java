@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "AGENDAMENTO")
+@Table(name = "AGENDAMENTOS")
 public class Agendamento implements Serializable {
 
     @Id
@@ -21,25 +21,25 @@ public class Agendamento implements Serializable {
     @Column(name = "AGENDAMENTO_ID", nullable = false)
     private Long id;
 
-    @Column(name = "DATA", nullable = false)
+    @Column(name = "AGENDAMENTO_DATA", nullable = false)
     private Date data;
 
-    @Column(name = "HORA", nullable = false)
+    @Column(name = "AGENDAMENTO_HORA", nullable = false)
     private Date hora;
 
-    @Column(name = "CATEGORIA_EQUIPAMENTO", nullable = false)
+    @Column(name = "AGENDAMENTO_CATEGORIA_EQUIPAMENTO", nullable = false)
     private List<CategoriaEquip> categoriaEquip;
 
-    @Column(name = "DEFEITO", nullable = false)
+    @Column(name = "AGENDAMENTO_DEFEITO", nullable = false)
     private String defeito;
 
     @OneToOne
     @JoinColumn(name="ASSISTENCIA_ID")
-    @Column (name="ASSISTENCIAS")
+    @Column (name="AGENDAMENTO_ASSISTENCIAS")
     private Assistencia assistencia;
 
     @OneToOne
     @JoinColumn(name="CLIENTE_ID")
-    @Column (name="CLIENTES")
+    @Column (name="AGENDAMENTO_CLIENTES")
     private Cliente cliente;
 }

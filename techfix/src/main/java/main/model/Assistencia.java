@@ -11,7 +11,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="ASSISTENCIA")
+@Table(name="ASSISTENCIAS")
 public class Assistencia implements Serializable {
     
     @Id
@@ -19,28 +19,28 @@ public class Assistencia implements Serializable {
     @Column(name = "ASSISTENCIA_ID", nullable = false)
     private Long id;
 
-    @Column(name = "NOME", nullable = false, unique = false)
+    @Column(name = "ASSISTENCIA_NOME", nullable = false, unique = false)
     private String nome;
 
-    @Column(name = "TELEFONE", nullable = false)
+    @Column(name = "ASSISTENCIA_TELEFONE", nullable = false)
     private String telefone;
 
-    @Column(name = "EMAIL", nullable = false)
+    @Column(name = "ASSISTENCIA_EMAIL", nullable = false)
     private String email;
 
-    @Column(name = "SENHA", nullable = false)
+    @Column(name = "ASSISTENCIA_SENHA", nullable = false)
     private String senha;
     
-    @Column(name = "CATEGORIA", nullable = false)
+    @Column(name = "ASSISTENCIA_CATEGORIA", nullable = false)
     private CategoriaEquip categoriaEquip;
 
-    @Column(name = "ENDERECO", nullable = false)
+    @Column(name = "ASSISTENCIA_ENDERECO", nullable = false)
     private Endereco endereco;
 
-    @Column(name = "HORARIOFUNCIONAMENTO", nullable = false)
+    @Column(name = "ASSISTENCIA_HORARIO_FUNCIONAMENTO", nullable = false)
     private String horarioFuncionamento;
 
-    @Column(name = "HORARIO", nullable = false)
+    @Column(name = "ASSISTENCIA_HORARIO", nullable = false)
     private Horario horario;
 
     /*
