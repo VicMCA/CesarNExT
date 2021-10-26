@@ -11,8 +11,6 @@ import java.util.List;
 public class ClienteService {
 
     @Autowired
-    private Cliente cliente;
-    @Autowired
     private ClienteDAO clienteDAO;
 
     public void salvar(Cliente cliente){
