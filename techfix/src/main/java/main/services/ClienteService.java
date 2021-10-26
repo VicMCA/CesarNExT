@@ -17,7 +17,7 @@ public class ClienteService {
         clienteDAO.save(cliente);
     }
 
-    public void remover(Cliente cliente){
+    public void deletar(Cliente cliente){
         clienteDAO.delete(cliente);
     }
 
