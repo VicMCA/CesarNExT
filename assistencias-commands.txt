@@ -1,24 +1,24 @@
 create table assistencias (
-assistencia_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-assistencia_nome TEXT NOT NULL,
-assistencia_categoria TEXT NOT NULL,
-assistencia_telefone VARCHAR(11) NOT NULL,
-assistencia_email TEXT NOT NULL,
-assistencia_senha TEXT NOT NULL,
-assistencia_endereco TEXT NOT NULL,
-assistencia_horarios TEXT NOT NULL,
-assistencia_horariofuncionamento TEXT NOT NULL
+id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+nome TEXT NOT NULL,
+categoria TEXT NOT NULL,
+telefone VARCHAR(11) NOT NULL,
+email TEXT NOT NULL,
+senha TEXT NOT NULL,
+endereco TEXT NOT NULL,
+horarios TEXT NOT NULL,
+horariofuncionamento TEXT NOT NULL
 );
 
 insert into assistencias(
-assistencia_nome,
-assistencia_categoria,
-assistencia_telefone,
-assistencia_email,
-assistencia_senha,
-assistencia_endereco,
-assistencia_horarios,
-assistencia_horariofuncionamento
+nome,
+categoria,
+telefone,
+email,
+senha,
+endereco,
+horarios,
+horariofuncionamento
 ) 
 values(
 'Tech Tecnicos',

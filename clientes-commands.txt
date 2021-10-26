@@ -1,20 +1,20 @@
 create table clientes (
-cliente_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-cliente_nome TEXT NOT NULL,
-cliente_cpf VARCHAR(14) NOT NULL UNIQUE,
-cliente_telefone VARCHAR(11) NOT NULL,
-cliente_email TEXT NOT NULL,
-cliente_senha TEXT NOT NULL,
-cliente_endereco TEXT NOT NULL
+id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+nome TEXT NOT NULL,
+cpf VARCHAR(14) NOT NULL UNIQUE,
+telefone VARCHAR(11) NOT NULL,
+email TEXT NOT NULL,
+senha TEXT NOT NULL,
+endereco TEXT NOT NULL
 );
 
 insert into clientes(
-cliente_nome,
-cliente_cpf,
-cliente_telefone,
-cliente_email,
-cliente_senha,
-cliente_endereco
+nome,
+cpf,
+telefone,
+email,
+senha,
+endereco
 ) 
 values(
 'Severino Severo',

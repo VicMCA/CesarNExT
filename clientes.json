@@ -1,0 +1,30 @@
+{
+    "cliente": [
+        {
+            "nome": "Severino Severo",
+            "cpf": "000.111.222-33",
+            "telefone": "81999887766",
+            "email": "severinosevero@email.com.br",
+            "senha": "sougentil",
+            "endereco": [
+                {
+                    "rua": "Rua do Bom Humor",
+                    "numero": "90",
+                    "complemento": " ",
+                    "bairro": "Humores",
+                    "cidade": "Recife",
+                    "estado": "Pernambuco",
+                    "cep": "50000-000",
+                    "pais": "Brasil"
+                }
+            ],
+            "equipamento": [
+                {
+                    "categoria": "smartphone",
+                    "marca": "samsung",
+                    "modelo": "Galaxy A"
+                }
+            ]
+        }
+    ]
+}
