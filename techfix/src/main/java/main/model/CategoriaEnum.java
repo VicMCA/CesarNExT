@@ -1,12 +1,14 @@
 package main.model;
 
 public enum CategoriaEnum {
+    ARCONDICIONADO,
+    EREADER,
+    GELADEIRA,
+    LAPTOP,
+    MICROONDAS,
+    MONITOR,
     SMARTPHONE,
     SMARTWATCH,
-    LAPTOP,
-    MONITOR,
-    TELEVISOR,
-    MICROONDAS,
-    GELADEIRA,
-    ARCONDICIONADO;
+    TABLET,
+    TELEVISOR;
 }
