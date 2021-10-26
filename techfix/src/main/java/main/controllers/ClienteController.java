@@ -20,13 +20,13 @@ public class ClienteController {
     @PostMapping("/cadastrar")
     public ResponseEntity<Cliente> cadastrar(@RequestBody Cliente cliente) throws URISyntaxException{
         clienteService.salvar(cliente);
-        return ResponseEntity.created(new URI("http://127.0.0.1:8081/cliente/add/" + cliente.getNome())).build();
+        return ResponseEntity.created(new URI("http://localhost:8081/cliente/add/" + cliente.getNome())).build();
     }
 
     @PatchMapping("/change")
     public ResponseEntity<Cliente> atualizar(@RequestBody Cliente cliente) throws URISyntaxException{
         clienteService.salvar(cliente);
-        return ResponseEntity.created(new URI("http://127.0.0.1:8081/cliente/add/" + cliente.getNome())).build();
+        return ResponseEntity.created(new URI("http://localhost:8081/cliente/add/" + cliente.getNome())).build();
     }
 
     @GetMapping("/findAll")
