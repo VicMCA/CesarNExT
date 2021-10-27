@@ -11,7 +11,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "categorias")
+@Table(name = "equipamento")
 public class Equipamento implements Serializable {
 
     @Id
@@ -26,6 +26,6 @@ public class Equipamento implements Serializable {
     private String modelo;
 
     @OneToOne
-    @JoinColumn(name = "categoria", nullable = false)
+    @JoinColumn(name = "categoria_id", nullable = false)
     private CategoriaEquip categoriaEquip;
 }

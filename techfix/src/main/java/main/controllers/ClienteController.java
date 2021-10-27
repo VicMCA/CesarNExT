@@ -20,23 +20,23 @@ public class ClienteController {
     private ClienteService clienteService;
 
     @PostMapping("/cadastrar")
-    public ResponseEntity<Cliente> cadastrar(@RequestBody Cliente cliente, Endereco endereco, Equipamento equipamento) throws URISyntaxException{
-        clienteService.salvar(cliente, endereco, equipamento);
-        return ResponseEntity.created(new URI("http://localhost:8081/cliente/" + cliente.getNome())).build();
+    public ResponseEntity<Void> cadastrar(@RequestBody Cliente cliente) throws URISyntaxException{
+        clienteService.salvar(cliente);
+        return ResponseEntity.created(new URI("http://127.0.0.1:8081/cliente/" + cliente.getNome())).build();
     }
 
-    @PatchMapping("/change")
-    public ResponseEntity<Cliente> atualizar(@RequestBody Cliente cliente, Endereco endereco, Equipamento equipamento) throws URISyntaxException{
-        clienteService.salvar(cliente, endereco, equipamento);
-        return ResponseEntity.created(new URI("http://localhost:8081/cliente/" + cliente.getNome())).build();
+    @PatchMapping("/atualizar")
+    public ResponseEntity<Void> atualizar(@RequestBody Cliente cliente) throws URISyntaxException{
+        clienteService.salvar(cliente);
+        return ResponseEntity.created(new URI("http://127.0.0.1:8081/cliente/" + cliente.getNome())).build();
     }
 
-    @GetMapping("/findAll")
+    @GetMapping("/buscar/todos")
     public ResponseEntity<List<Cliente>> consultarTodos(){
         return ResponseEntity.ok().body(clienteService.findAll());
     }
 
-    @GetMapping("/find/{cliente}")
+    @GetMapping("/buscar/{cliente}")
     public ResponseEntity<Cliente> consultar(@PathVariable("cliente") Cliente cliente){
         if (cliente != null){
             return ResponseEntity.ok().body(clienteService.find(cliente));

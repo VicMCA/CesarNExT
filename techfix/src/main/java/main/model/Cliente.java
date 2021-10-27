@@ -35,13 +35,13 @@ public class Cliente implements Serializable {
     @Column(name = "senha", nullable = false)
     private String senha;
 
-    @OneToOne
-    @JoinColumn(name = "endereco_id", nullable = false)
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "endereco_id")
     private Endereco endereco;
 
-    @OneToMany
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "equipamento_id")
-    private List<Equipamento> equipamentos;
+    private Equipamento equipamento;
 
     /*@OneToMany
     @JoinColumn(name = "AGENDAMENTO_ID", unique = true)
