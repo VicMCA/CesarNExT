@@ -1,45 +1,50 @@
 package main.services;
 
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import lombok.RequiredArgsConstructor;
 import main.DAO.ClienteDAO;
 import main.DAO.EnderecoDAO;
 import main.DAO.EquipamentoDAO;
+import main.dto.CustomerResponseDTO;
+import main.exceptions.CustomerNotFoundException;
 import main.model.Cliente;
 import main.model.Endereco;
 import main.model.Equipamento;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class ClienteService {
 
-    private ClienteDAO clienteDAO;
-    private EnderecoDAO enderecoDAO;
-    private EquipamentoDAO equipamentoDAO;
+	private final ClienteDAO clienteDAO;
 
-    @Autowired
-    public ClienteService(ClienteDAO clienteDAO, EnderecoDAO enderecoDAO, EquipamentoDAO equipamentoDAO){
-        this.clienteDAO = clienteDAO;
-        this.enderecoDAO = enderecoDAO;
-        this.equipamentoDAO = equipamentoDAO;
-    }
+	private final EnderecoDAO enderecoDAO;
 
-        public void salvar(Cliente cliente, Endereco endereco, Equipamento equipamento){
-        enderecoDAO.save(endereco);
-        equipamentoDAO.save(equipamento);
-        clienteDAO.save(cliente);
-    }
+	private final EquipamentoDAO equipamentoDAO;
 
-    public void deletar(Cliente cliente){
-        clienteDAO.delete(cliente);
-    }
+	public void salvar(Cliente cliente, Endereco endereco, Equipamento equipamento) {
+		enderecoDAO.save(endereco);
+		equipamentoDAO.save(equipamento);
+		clienteDAO.save(cliente);
+	}
 
-    public List<Cliente> findAll(){
-        return clienteDAO.findAll();
-    }
+	public void deletar(Cliente cliente) {
+		clienteDAO.delete(cliente);
+	}
 
-    public Cliente find(Cliente cliente){
-        return clienteDAO.findById(cliente.getId()).get();
-    }
+	public List<Cliente> findAll() {
+		return clienteDAO.findAll();
+	}
+
+	public Cliente find(Cliente cliente) {
+		return clienteDAO.findById(cliente.getId()).get();
+	}
+
+	public CustomerResponseDTO findById(Long id) throws CustomerNotFoundException {
+		Cliente cliente = this.clienteDAO.findById(id).orElseThrow(CustomerNotFoundException::new);
+
+		return CustomerResponseDTO.deserialize(cliente);
+	}
 }
